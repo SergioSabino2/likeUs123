@@ -18,7 +18,7 @@ public class Intro extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
+        //3452354235
         paint.setColor(Color.BLACK);
         paint.setTextSize(50);
 ////
