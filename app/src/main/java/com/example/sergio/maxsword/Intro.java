@@ -30,12 +30,19 @@ public class Intro extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        update();
+        update();// llamamo la clase update para que se ejecute todo lo que esta adrentro
 
 
         paint.setColor(Color.BLACK);
         paint.setTextSize(50);
 
         canvas.drawText("Hello World!!!!!",50,50,paint);
+
+        canvas.drawBitmap(
+                bitmap, // llama la variable de la imagen que guardamos Bitmap
+                50,// la pocion X
+                50,// la pocion Y
+                paint// necesario para pintar en canvas
+                );
     }
 }
