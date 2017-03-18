@@ -35,16 +35,29 @@ public class Intro extends View {
     }
 
     void MoverImagen(){
-        if(X > W){
+        int Velocidad = 20;
+        if(X > W-bitmap.getWidth()){
             PW = false;
         }else if(X <= 0){
             PW = true;
         }
 
         if(PW){
-            X+=10;
+            X += Velocidad;
         }else{
-            X-=10;
+            X -= Velocidad;
+        }
+
+        if(Y > H-bitmap.getHeight()){
+            PH = false;
+        }else if(Y <= 0){
+            PH = true;
+        }
+
+        if(PH){
+            Y += Velocidad;
+        }else{
+            Y -= Velocidad;
         }
     }
 
