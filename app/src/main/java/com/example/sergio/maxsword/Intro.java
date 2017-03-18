@@ -12,6 +12,8 @@ import android.view.View;
 public class Intro extends View {
     private Paint paint = new Paint();
 
+    float X,Y;// PODREMOS los nombre  (X Y) en una varible Float para mover
+
     public Intro(Aplic GameActivity) {
         super(GameActivity);
 
@@ -24,7 +26,8 @@ public class Intro extends View {
 
     public  void update(){
         // esta clase la utilizaremos para implemetar los movimientos del objeto oh imagen
-
+        X+=10;// lo incremetamos los datos  por 10  para que los valores tenga una nueva posicion
+        Y+=10;// igual lo mismo
     }
 
     @Override
@@ -40,8 +43,8 @@ public class Intro extends View {
 
         canvas.drawBitmap(
                 bitmap, // llama la variable de la imagen que guardamos Bitmap
-                50,// la pocion X
-                50,// la pocion Y
+                X,// la pocion X
+                Y,// la pocion Y
                 paint// necesario para pintar en canvas
                 );
     }
