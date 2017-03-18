@@ -3,6 +3,7 @@ package com.example.sergio.maxsword;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -13,16 +14,23 @@ public class Intro extends View {
 
     public Intro(Aplic GameActivity) {
         super(GameActivity);
+
+        bitmap = BitmapFactory.decodeResource(
+                getResources(),// Recusor del aplicacion
+                R.mipmap.ic_launcher); //Ubucacion de donde esta la imagen
     }
 
-    Bitmap bitmap;
+    Bitmap bitmap; // variable Bitmap para guardad imagen
 
-    update(){
+    public  void update(){
 
     }
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        update();
+
 
         paint.setColor(Color.BLACK);
         paint.setTextSize(50);
