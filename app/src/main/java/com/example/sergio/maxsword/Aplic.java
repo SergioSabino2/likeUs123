@@ -8,6 +8,6 @@ public class Aplic extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(new Intro(this));
+        setContentView(new Intro(this));/// llamamos la clase Intro que es View mostrar todo
     }
 }
