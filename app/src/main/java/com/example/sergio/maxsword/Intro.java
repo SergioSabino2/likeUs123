@@ -60,7 +60,8 @@ public class Intro extends View {
             Y -= Velocidad;
         }
     }
-
+//sergiosabino412@gmail.com
+    //s3rg1o.12
     @Override
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
