@@ -13,6 +13,8 @@ public class Intro extends View {
     private Paint paint = new Paint();
 
     float X,Y;// PODREMOS los nombre  (X Y) en una varible Float para mover
+    int W,H; // aqui ponemos el tamaño de la pantalla
+
 
     public Intro(Aplic GameActivity) {
         super(GameActivity);
@@ -24,22 +26,40 @@ public class Intro extends View {
 
     Bitmap bitmap; // variable Bitmap para guardad imagen
 
+    boolean PW=true,PH=true;
     public void update(){
         // esta clase la utilizaremos para implemetar los movimientos del objeto oh imagen
-        X+=10;// lo incremetamos los datos  por 10  para que los valores tenga una nueva posicion
-        Y+=10;// igual lo mismo
+        // lo incremetamos los datos  por 10  para que los valores tenga una nueva posicion
+
+        MoverImagen();
+    }
+
+    void MoverImagen(){
+        if(X > W){
+            PW = false;
+        }else if(X <= 0){
+            PW = true;
+        }
+
+        if(PW){
+            X+=10;
+        }else{
+            X-=10;
+        }
     }
 
     @Override
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         update();// llamamo la clase update para que se ejecute todo lo que esta adrentro
-
+        W = getWidth();
+        H = getHeight();
 
         paint.setColor(Color.BLACK);
         paint.setTextSize(50);
 
-        canvas.drawText("Hello World!!!!!",50,50,paint);
+        canvas.drawText("Tamaño de la pantalla W: "+W+" H: "+H,50,50,paint);
+        canvas.drawText("Posicion  X: "+X+" Y: "+Y,50,100,paint);
 
         canvas.drawBitmap(
                 bitmap, // llama la variable de la imagen que guardamos Bitmap
@@ -47,6 +67,6 @@ public class Intro extends View {
                 Y,// la pocion Y
                 paint// necesario para pintar en canvas
                 );
-        postInvalidateDelayed(15);/// la velocidad de FPS que quiera que cambie el canvas necesesario
+        postInvalidateDelayed(5);/// la velocidad de FPS que quiera que cambie el canvas necesesario
     }
 }
