@@ -21,9 +21,11 @@ public class Intro extends View {
 
         paint.setColor(Color.BLACK);
         paint.setTextSize(50);
-
-        canvas.drawText("Hello World!!",50,50,paint);
+////
+        canvas.drawText("Hello World!!!!!",50,50,paint);
         //Ahora seteare el Backgroud!!! Esto es prueba!!
+
+        /////
 
     }
 }
