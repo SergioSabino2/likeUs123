@@ -65,13 +65,13 @@ public class Intro extends View {
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         update();// llamamo la clase update para que se ejecute todo lo que esta adrentro
-        W = getWidth();
-        H = getHeight();
+        W = getWidth(); // le asinamos el valor de la pantalla del canvas
+        H = getHeight(); // igual lo mismo
 
-        paint.setColor(Color.BLACK);
-        paint.setTextSize(50);
+        paint.setColor(Color.BLACK);// le ponemos color negro paint esto puede que todo los objetos que se cre de bajo pueda tener este color
+        paint.setTextSize(50);// le damos un tamaños para todo los texto dibujado en canvas
 
-        canvas.drawText("Tamaño de la pantalla W: "+W+" H: "+H,50,50,paint);
+        canvas.drawText("Tamaño de la pantalla W: "+W+" H: "+H,50,50,paint);// drawText es una herramienta para escribir texto
         canvas.drawText("Posicion  X: "+X+" Y: "+Y,50,100,paint);
 
         canvas.drawBitmap(
