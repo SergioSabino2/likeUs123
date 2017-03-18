@@ -24,14 +24,14 @@ public class Intro extends View {
 
     Bitmap bitmap; // variable Bitmap para guardad imagen
 
-    public  void update(){
+    public void update(){
         // esta clase la utilizaremos para implemetar los movimientos del objeto oh imagen
         X+=10;// lo incremetamos los datos  por 10  para que los valores tenga una nueva posicion
         Y+=10;// igual lo mismo
     }
 
     @Override
-    protected void onDraw(Canvas canvas) {
+    public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         update();// llamamo la clase update para que se ejecute todo lo que esta adrentro
 
@@ -47,5 +47,6 @@ public class Intro extends View {
                 Y,// la pocion Y
                 paint// necesario para pintar en canvas
                 );
+        postInvalidateDelayed(15);/// la velocidad de FPS que quiera que cambie el canvas necesesario
     }
 }
