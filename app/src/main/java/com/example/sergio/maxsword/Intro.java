@@ -2,6 +2,7 @@ package com.example.sergio.maxsword;
 
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -14,7 +15,11 @@ public class Intro extends View {
         super(GameActivity);
     }
 
+    Bitmap bitmap;
 
+    update(){
+
+    }
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
