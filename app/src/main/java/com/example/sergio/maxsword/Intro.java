@@ -23,6 +23,7 @@ public class Intro extends View {
     Bitmap bitmap; // variable Bitmap para guardad imagen
 
     public  void update(){
+        // esta clase la utilizaremos para implemetar los movimientos del objeto oh imagen
 
     }
 
