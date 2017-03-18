@@ -12,7 +12,7 @@ import android.view.View;
 public class Intro extends View {
     private Paint paint = new Paint();
 
-    float X,Y;// PODREMOS los nombre  (X Y) en una varible Float para mover
+    float X=0,Y=0;// PODREMOS los nombre  (X Y) en una varible Float para mover
     int W,H; // aqui ponemos el tamaño de la pantalla
 
 
@@ -21,7 +21,7 @@ public class Intro extends View {
 
         bitmap = BitmapFactory.decodeResource(
                 getResources(),// Recusor del aplicacion
-                R.mipmap.ic_launcher); //Ubucacion de donde esta la imagen
+                R.mipmap.images); //Ubucacion de donde esta la imagen
     }
 
     Bitmap bitmap; // variable Bitmap para guardad imagen
@@ -31,7 +31,7 @@ public class Intro extends View {
         // esta clase la utilizaremos para implemetar los movimientos del objeto oh imagen
         // lo incremetamos los datos  por 10  para que los valores tenga una nueva posicion
 
-        MoverImagen();
+       // MoverImagen();
     }
 
     void MoverImagen(){
@@ -71,8 +71,12 @@ public class Intro extends View {
         paint.setColor(Color.BLACK);// le ponemos color negro paint esto puede que todo los objetos que se cre de bajo pueda tener este color
         paint.setTextSize(50);// le damos un tamaños para todo los texto dibujado en canvas
 
-        canvas.drawText("Tamaño de la pantalla W: "+W+" H: "+H,50,50,paint);// drawText es una herramienta para escribir texto
-        canvas.drawText("Posicion  X: "+X+" Y: "+Y,50,100,paint);
+
+        //Ahora hare el arreglo de las dimenciones!!<--Sergio-->
+       int anchoTotal = W * bitmap.getWidth() / bitmap.getWidth();
+        int altoTotal = H * bitmap.getHeight() / bitmap.getHeight();
+//ahora intentasetearle esos valores!! al bitmap paraque se ajuste a la pantalla!!<--sergio-->
+
 
         canvas.drawBitmap(
                 bitmap, // llama la variable de la imagen que guardamos Bitmap
@@ -81,5 +85,9 @@ public class Intro extends View {
                 paint// necesario para pintar en canvas
                 );
         postInvalidateDelayed(5);/// la velocidad de FPS que quiera que cambie el canvas necesesario
+
+        canvas.drawText("Tamaño de la pantalla W: "+W+" H: "+H,50,50,paint);// drawText es una herramienta para escribir texto
+        canvas.drawText("Posicion  X: "+anchoTotal+" Y: "+altoTotal,50,100,paint);
+
     }
 }
