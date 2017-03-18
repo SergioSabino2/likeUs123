@@ -25,7 +25,7 @@ public class Intro extends View {
         canvas.drawText("Hello World!!!!!",50,50,paint);
         //Ahora seteare el Backgroud!!! Esto es prueba!!
 
-        /////
+        /////hola mundo como esta
 
     }
 }
