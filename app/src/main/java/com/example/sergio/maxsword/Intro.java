@@ -18,14 +18,10 @@ public class Intro extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        //3452354235
+
         paint.setColor(Color.BLACK);
         paint.setTextSize(50);
-////
-        canvas.drawText("Hello World!!!!!",50,50,paint);
-        //Ahora seteare el Backgroud!!! Esto es prueba!!
 
-        /////hola mundo como esta
-        //// Por lo que veo esta funcionando sin nungun problema!!!
+        canvas.drawText("Hello World!!!!!",50,50,paint);
     }
 }
