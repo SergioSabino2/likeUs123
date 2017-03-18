@@ -26,6 +26,6 @@ public class Intro extends View {
         //Ahora seteare el Backgroud!!! Esto es prueba!!
 
         /////hola mundo como esta
-
+        //// Por lo que veo esta funcionando sin nungun problema!!!
     }
 }
