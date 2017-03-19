@@ -166,7 +166,7 @@ public class GameView extends View {
             paint.setColor(Color.BLACK);//Cambiar Tamaño
             G.drawRect((float) (Daj.PaW - (Daj.PaW / 10)), (float) (Daj.PaH - (Daj.PaH / 3.2)), (float) (Daj.PaW - (Daj.PaW / 1000)), (float) (Daj.PaH - (Daj.PaH / 6)), paint);
 
-
+/*
         int OJ=0;
         while (creadorMapa.TodoObjetosCreados.size()>OJ){
 
@@ -192,7 +192,7 @@ public class GameView extends View {
 
         G.drawBitmap(Cam.getObjeto()[creadorMapa.NumObjeto][creadorMapa.TamañoObjeto], Daj.MapX-creadorMapa.ObjetoXY[0], Ani.Gravedad(Cam.getObjeto()[creadorMapa.NumObjeto][creadorMapa.TamañoObjeto].getHeight()), null);
         Cam.getObjeto()[0][1].getHeight();
-        creadorMapa.Controles();
+        creadorMapa.Controles();*/
 //////////////////////////////////////////////////////////
 
         G.restore();
