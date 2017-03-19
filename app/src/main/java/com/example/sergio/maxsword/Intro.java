@@ -21,7 +21,7 @@ public class Intro extends View {
 
         bitmap = BitmapFactory.decodeResource(
                 getResources(),// Recusor del aplicacion
-                R.mipmap.images); //Ubucacion de donde esta la imagen
+                R.mipmap.ic_launcher); //Ubucacion de donde esta la imagen
     }
 
     Bitmap bitmap; // variable Bitmap para guardad imagen
@@ -73,7 +73,7 @@ public class Intro extends View {
 
 
         //Ahora hare el arreglo de las dimenciones!!<--Sergio-->
-       int anchoTotal = W * bitmap.getWidth() / bitmap.getWidth();
+        int anchoTotal = W * bitmap.getWidth() / bitmap.getWidth();
         int altoTotal = H * bitmap.getHeight() / bitmap.getHeight();
 //ahora intentasetearle esos valores!! al bitmap paraque se ajuste a la pantalla!!<--sergio-->
 
@@ -89,5 +89,17 @@ public class Intro extends View {
         canvas.drawText("Tamaño de la pantalla W: "+W+" H: "+H,50,50,paint);// drawText es una herramienta para escribir texto
         canvas.drawText("Posicion  X: "+anchoTotal+" Y: "+altoTotal,50,100,paint);
 
+    }
+}
+
+class Dimecion extends View {
+
+    public Dimecion(Aplic GameActivity){
+        super(GameActivity);
+    }
+
+    @Override
+    public void onDraw(Canvas canvas) {
+        
     }
 }
