@@ -151,7 +151,7 @@ public class Espadas {
         Espadasd = RI.CambiarTamaño(BitmapFactory.decodeResource(resources, R.drawable.espada));
         Espadasi = RI.VoltearHorizontal(Espadasd);
     }
-
+//
     public Bitmap[] getTodaEspadasD() {
         return TodaEspadasD;
     }
