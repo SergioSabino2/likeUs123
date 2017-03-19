@@ -93,13 +93,18 @@ public class Intro extends View {
 }
 
 class Dimecion extends View {
+    Paint paint = new Paint();
+    Bitmap Imagen;
+
+    int W,H;
 
     public Dimecion(Aplic GameActivity){
         super(GameActivity);
+        Imagen = BitmapFactory.decodeResource(getResources(),R.drawable.dedsec);
     }
 
     @Override
     public void onDraw(Canvas canvas) {
-        
+        canvas.drawBitmap(Imagen,0,0,paint);
     }
 }
