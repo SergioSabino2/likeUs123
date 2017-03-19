@@ -21,9 +21,9 @@ public class GameView extends View {
     Paint paint = new Paint();
 
     Player Pla;
-    Espadas Esp;
+//    Espadas Esp;
     CampoBT Cam;
-    Caretas Car;
+    //Caretas Car;
     Jestos Jest;
     Animacion Ani;
     ControlesJuegos controlesJuegos = new ControlesJuegos();
@@ -47,9 +47,9 @@ public class GameView extends View {
 
     public void CargarImagen(){
         Pla = new Player(getResources());
-        Esp = new Espadas(getResources());
+       // Esp = new Espadas(getResources());
         Cam = new CampoBT(getResources());
-        Car = new Caretas(getResources());
+        //Car = new Caretas(getResources());
         Ani =  new Animacion(getResources());
     }
 

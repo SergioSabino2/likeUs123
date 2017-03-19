@@ -92,6 +92,7 @@ public class Espadas {
 
         EspadaAT1Iz = Movie.decodeStream(CarImgGif);
         */
+        /*
         ImgATA1d = RI.CambiarTamaño(BitmapFactory.decodeResource(resources, R.drawable.ata1));
         ImgATA2d = RI.CambiarTamaño(BitmapFactory.decodeResource(resources, R.drawable.ata2));
         ImgATA3d = RI.CambiarTamaño(BitmapFactory.decodeResource(resources, R.drawable.ata3));
@@ -102,7 +103,7 @@ public class Espadas {
         ImgATA8d = RI.CambiarTamaño(BitmapFactory.decodeResource(resources, R.drawable.ata8));
         ImgATA9d = RI.CambiarTamaño(BitmapFactory.decodeResource(resources, R.drawable.ata9));
         ImgATA10d = RI.CambiarTamaño(BitmapFactory.decodeResource(resources, R.drawable.ata10));
-
+*/
     }
 
     public void Ataque1i(){
@@ -119,7 +120,7 @@ public class Espadas {
         ImgATA10i = RI.VoltearHorizontal(ImgATA10d);
     }
 
-    public void Atb2d(Resources resources){
+    public void Atb2d(Resources resources){/*
         ImgATB1d = RI.CambiarTamaño(BitmapFactory.decodeResource(resources, R.drawable.atb1));
         ImgATB2d = RI.CambiarTamaño(BitmapFactory.decodeResource(resources, R.drawable.atb2));
         ImgATB3d = RI.CambiarTamaño(BitmapFactory.decodeResource(resources, R.drawable.atb3));
@@ -129,7 +130,7 @@ public class Espadas {
         ImgATB7d = RI.CambiarTamaño(BitmapFactory.decodeResource(resources, R.drawable.atb7));
         ImgATB8d = RI.CambiarTamaño(BitmapFactory.decodeResource(resources, R.drawable.atb8));
         ImgATB9d = RI.CambiarTamaño(BitmapFactory.decodeResource(resources, R.drawable.atb9));
-        ImgATB10d = RI.CambiarTamaño(BitmapFactory.decodeResource(resources, R.drawable.atb10));
+        ImgATB10d = RI.CambiarTamaño(BitmapFactory.decodeResource(resources, R.drawable.atb10));*/
     }
 
     public void Atb2i(){

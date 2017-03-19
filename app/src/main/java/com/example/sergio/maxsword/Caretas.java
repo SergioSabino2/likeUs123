@@ -18,7 +18,7 @@ public class Caretas {
     }
 
     public void CaretaDerecho(Resources resources){
-        CTD1 = BitmapFactory.decodeResource(resources, R.drawable.careta2);
+        //CTD1 = BitmapFactory.decodeResource(resources, R.drawable.careta2);
         CTD1 = RI.CambiarTamaño(CTD1);
     }
     public  void CaretaIzquierdo(Resources resources){
