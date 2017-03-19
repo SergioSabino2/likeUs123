@@ -96,15 +96,20 @@ class Dimecion extends View {
     Paint paint = new Paint();
     Bitmap Imagen;
 
-    int W,H;
+    float W,H;
+
 
     public Dimecion(Aplic GameActivity){
         super(GameActivity);
-        Imagen = BitmapFactory.decodeResource(getResources(),R.drawable.dedsec);
+        //Imagen = BitmapFactory.decodeResource(getResources(),R.drawable.dedsec);
     }
 
     @Override
     public void onDraw(Canvas canvas) {
+
+        W = canvas.getWidth();
+        H = canvas.getHeight();
+
         canvas.drawBitmap(Imagen,0,0,paint);
     }
 }
